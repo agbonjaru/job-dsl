@@ -21,7 +21,7 @@ steps {
     dockerBuildAndPublish {
         repositoryName('jstryngs/notch-angular-docker')
         tag('${GIT_REVISION,length=9}')
-        registryCredentials('dockerHub')
+        registryCredentials('dockerhub')
         forcePull(false)
         forceTag(false)
         createFingerprints(false)
