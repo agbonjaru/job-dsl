@@ -2,7 +2,7 @@ job('NodeJS example'){
     scm {
         git('git://github.com/agbonjaru/notch.git'){
             node -> //is hudson.plugin.git.GitSCM
-            node / gitConfigName('DSL User')
+            node / gitConfigName('agbonjaru')
             node / gitConfigEmail('jstryngs@gmail.com')
         
         }
