@@ -1,4 +1,4 @@
-job('NodeJS example'){
+job('notch-app'){
     scm {
         git('git://github.com/agbonjaru/notch.git'){
             node -> //is hudson.plugin.git.GitSCM
@@ -8,7 +8,7 @@ job('NodeJS example'){
         }
     }
 triggers {
-    scm('H/5 * * * *')
+    scm('H/5 * * * *')  //runs every 5 mins
 }
 wrappers {
     nodejs('nodejs') //this is the name of node js installation
