@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('get code from pipeline') {
       steps {
-        git(url: 'https://github.com/agbonjaru/jenkinsfiles.git', branch: 'master')
+        git(url: 'https://github.com/agbonjaru/jenkinsfiles.git', branch: 'master', credentialsId: 'gitCredentials')
       }
     }
 
